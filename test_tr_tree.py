@@ -12,9 +12,12 @@ from datetime import datetime
 #serial = '49534B5461267888'
 #serial = '52544B4702700010'
 #serial = '51544543B3C97288'
-serial = '48575443463C9EA3'
+#serial = '48575443463C9EA3'
 #serial = '454C545887000238'
 #serial = '48575443463C79A3'
+
+serial = str(input("Введите серийныый номер: "))
+print(serial)
 
 
 acs_url_reutov = {'get_rpc': 'http://78.37.124.122:8050/rtk/CPEManager/DMInterfaces/rest/v1/action/GetRPCMethods', 
