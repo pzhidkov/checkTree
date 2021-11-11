@@ -28,13 +28,13 @@ acs_url_reutov = {'get_rpc': 'http://78.37.124.122:8050/rtk/CPEManager/DMInterfa
             'gpw': 'http://172.17.87.238:9673/rtk/CPEManager/DMInterfaces/rest/v1/action/GetParameterValues', 
             'ppp_down': 'http://172.17.87.238:9673/rtk/CPEManager/DMInterfaces/rest/v1/action/SetParameterValues', }
 
-acs_url_nwt = {'get_rpc': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/GetRPCMethods', 
-            'fr': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/FactoryReset',
-            'activate_hsi': 'http://10.160.191.12:4673/live/CPEManager/AXServiceStorage/Interfaces/rest/v1/action/activate_HSI', 
-            'activate_iptv': 'http://10.160.191.12:4673/live/CPEManager/AXServiceStorage/Interfaces/rest/v1/action/activate_IPTV', 
-            'spw': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/SetParameterValues', 
-            'gpw': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/GetParameterValues', 
-            'ppp_down': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/SetParameterValues', }
+#acs_url_nwt = {'get_rpc': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/GetRPCMethods', 
+#            'fr': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/FactoryReset',
+#            'activate_hsi': 'http://10.160.191.12:4673/live/CPEManager/AXServiceStorage/Interfaces/rest/v1/action/activate_HSI', 
+#            'activate_iptv': 'http://10.160.191.12:4673/live/CPEManager/AXServiceStorage/Interfaces/rest/v1/action/activate_IPTV', 
+#            'spw': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/SetParameterValues', 
+#            'gpw': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/GetParameterValues', 
+#            'ppp_down': 'http://10.160.191.12:4673/live/CPEManager/DMInterfaces/rest/v1/action/SetParameterValues', }
 
 post_fields_reutov = {'get_rpc': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync": 1, "Lifetime": 60}}' % serial)), 
                 'fr': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync": 1, "Lifetime": 60}}' % serial)),
@@ -46,14 +46,14 @@ post_fields_reutov = {'get_rpc': json.loads(json.dumps('{"CPEIdentifier": {"cpei
                 'activate_hsi': json.loads(json.dumps('{"ServiceIdentifiers": {"cpeid": "%s"}, "DiagnosticTests": ["nicko_PPPoE_LAN1_LAN2_SSID1_SSID5"], "CommandOptions": {}, "DiagnosticTestsGroups": []}' % serial)),
                 'activate_iptv': json.loads(json.dumps('{"ServiceIdentifiers": {"cpeid": "%s"}, "DiagnosticTests": ["nicko_IPTV_3-4"], "CommandOptions": {}, "DiagnosticTestsGroups": []}' % serial)), }
 
-post_fields_nwt = {'get_rpc': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync": 1, "Lifetime": 60}}' % serial)), 
-                'fr': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync": 1, "Lifetime": 60}}' % serial)),
-                'sa_pwd': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": [{"key": "InternetGatewayDevice.LANConfigSecurity.ConfigPassword", "value": "1029384756"}]}' % serial)),
-                'ppp_down': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": [{"key": "InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Enable", "value": 0}]}' % serial)),
-                'ppp_up': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": [{"key": "InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Enable", "value": 1}]}' % serial)),
-                'get_ext_ip': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": ["InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress"]}' % serial)),
-                'activate_hsi': json.loads(json.dumps('{"ServiceIdentifiers": {"cpeid": "%s", "cid": "123", "cid2": "MA5680T", "portNumber": 1, "portType": "ETH"}, "CommandOptions": {"Lifetime": 0, "Retry": 5}, "ServiceParameters": {"connectionType": "Routing", "password": "rtk", "username": "rtk", "portType": "ETH", "portNumber": 1}}' % serial)),
-                'activate_iptv': json.loads(json.dumps('{"ServiceIdentifiers": {"cpeid": "%s", "cid": "123", "cid2": "MA5680T", "portNumber": 1, "portType": "ETH"}, "CommandOptions": {"Lifetime": 0, "Retry": 5}, "ServiceParameters": {"portType": "ETH", "portNumber": 1}}' % serial)),}              
+#post_fields_nwt = {'get_rpc': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync": 1, "Lifetime": 60}}' % serial)), 
+#                'fr': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync": 1, "Lifetime": 60}}' % serial)),
+#                'sa_pwd': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": [{"key": "InternetGatewayDevice.LANConfigSecurity.ConfigPassword", "value": "1029384756"}]}' % serial)),
+#                'ppp_down': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": [{"key": "InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Enable", "value": 0}]}' % serial)),
+#                'ppp_up': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": [{"key": "InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Enable", "value": 1}]}' % serial)),
+#                'get_ext_ip': json.loads(json.dumps('{"CPEIdentifier": {"cpeid": "%s"}, "CommandOptions": {"Sync":1, "Lifetime":60}, "Parameters": ["InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress"]}' % serial)),
+#                'activate_hsi': json.loads(json.dumps('{"ServiceIdentifiers": {"cpeid": "%s", "cid": "123", "cid2": "MA5680T", "portNumber": 1, "portType": "ETH"}, "CommandOptions": {"Lifetime": 0, "Retry": 5}, "ServiceParameters": {"connectionType": "Routing", "password": "rtk", "username": "rtk", "portType": "ETH", "portNumber": 1}}' % serial)),
+#                'activate_iptv': json.loads(json.dumps('{"ServiceIdentifiers": {"cpeid": "%s", "cid": "123", "cid2": "MA5680T", "portNumber": 1, "portType": "ETH"}, "CommandOptions": {"Lifetime": 0, "Retry": 5}, "ServiceParameters": {"portType": "ETH", "portNumber": 1}}' % serial)),}              
 
 headers = {'header': json.loads('{"Content-Type":"application/json"}'),}
 
