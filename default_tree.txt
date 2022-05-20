@@ -436,6 +436,43 @@ InternetGatewayDevice.DeviceInfo.MemoryStatus.Total
 InternetGatewayDevice.DeviceInfo.MemoryStatus.Free
 InternetGatewayDevice.DeviceInfo.ProcessStatus.CPUUsage
 InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.X_RTK_CurrentPPPoEACName
+InternetGatewayDevice.X_RTK_WiFiExtender.NodeNumberOfEntries
+InternetGatewayDevice.X_RTK_WiFiExtender.RootMode
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.RSSIValue
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.Manufacturer
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.ModelName
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.SerialNumber
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.HardwareVersion
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.SoftwareVersion
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.UpTime
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.Active
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.IPAddress
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.MACAddress
+InternetGatewayDevice.X_RTK_WiFiExtender.Node.1.Mode
+InternetGatewayDevice.X_RTK_WiFiMesh.NodeNumberOfEntries
+InternetGatewayDevice.X_RTK_WiFiMesh.RootMode
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.RSSIValue
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Manufacturer
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.ModelName
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.SerialNumber
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.HardwareVersion
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.SoftwareVersion
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.UpTime
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.MACAddress
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Active
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Interface
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.ClientNumberOfEntries
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.Active
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.LastDataDownlinkRate
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.LastDataUplinkRate
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.AssociatedDeviceMACAddress
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.AssociatedDeviceIPAddress
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.RSSI
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.Noise
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.RSSI
+InternetGatewayDevice.X_RTK_WiFiMesh.Node.1.Client.1.Uptime
+InternetGatewayDevice.X_RTK_WiFiMesh.802.11r.Enable
+
 
 
 
